@@ -1,0 +1,556 @@
+<!doctype html>
+
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Interior Studio — студія дизайну інтер'єру у Києві. Проєкти квартир, будинків, офісів."
+    />
+    <title>Interior Studio — Дизайн інтер'єру</title>
+    <link rel="icon" type="image/png" href="images/favicon.png" sizes="32x32" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=Lato:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="css/reset.css" rel="stylesheet" />
+    <link href="css/styles.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header class="header" id="header">
+      <div class="container">
+        <div class="header__inner">
+          <a href="index.html" class="logo" aria-label="Interior Studio">
+            <span class="logo__name">Interior Studio</span>
+            <span class="logo__sub">Дизайн інтер'єру</span>
+          </a>
+
+          <nav class="nav" id="nav" aria-label="Основна навігація">
+            <ul class="nav__list">
+              <li><a href="index.html" class="nav__link active">Головна</a></li>
+              <li><a href="services.html" class="nav__link">Послуги</a></li>
+              <li>
+                <a href="index.html#portfolio" class="nav__link">Портфоліо</a>
+              </li>
+              <li><a href="index.html#about" class="nav__link">Про нас</a></li>
+              <li><a href="contact.html" class="nav__link">Контакти</a></li>
+            </ul>
+          </nav>
+
+          <button
+            class="burger"
+            id="burger"
+            aria-label="Відкрити меню"
+            aria-expanded="false"
+            aria-controls="nav"
+          >
+            <span class="burger__line"></span>
+            <span class="burger__line"></span>
+            <span class="burger__line"></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <section class="hero" id="home" aria-label="Головний банер">
+      <div class="hero__content">
+        <span class="hero__tag">Студія дизайну інтер'єру</span>
+        <h1 class="hero__title">Ваш простір —<br />наша пристрасть</h1>
+        <p class="hero__text">
+          Створюємо красиві, функціональні та неповторні інтер'єри для вашого
+          дому й бізнесу
+        </p>
+        <div class="hero__btns">
+          <a href="#portfolio" class="btn btn--fill">Переглянути портфоліо</a>
+          <a href="contact.html" class="btn btn--ghost"
+            >Замовити консультацію</a
+          >
+        </div>
+      </div>
+      <div class="hero__arrow" aria-hidden="true">Гортайте</div>
+    </section>
+
+    <section class="section" id="about">
+      <div class="container">
+        <div class="about__grid">
+          <div class="about__img-wrap">
+            <img
+              src="images/about.jpg"
+              alt="Команда студії Interior Studio за роботою над проєктом"
+              class="about__img"
+              width="600"
+              height="440"
+            />
+            <div class="about__badge">
+              <span class="about__badge-n">8+</span>
+              <span class="about__badge-l">Років досвіду</span>
+            </div>
+          </div>
+          <div>
+            <span class="about__tag">Про студію</span>
+            <h2 class="about__title">Перетворюємо простори на натхнення</h2>
+            <p class="about__text">
+              <strong>Interior Studio</strong> — команда досвідчених дизайнерів
+              і архітекторів, які з захопленням підходять до кожного проєкту. Ми
+              спеціалізуємося на розробці дизайн-проєктів для
+              <em>житлових та комерційних приміщень</em> будь-якої складності.
+            </p>
+            <p class="about__text">
+              Наш підхід поєднує глибоке розуміння потреб замовника, сучасні
+              тенденції та увагу до найдрібніших деталей. Кожен проєкт — це
+              унікальна розповідь, яку ми втілюємо через простір.
+            </p>
+
+            <dl class="about__stats">
+              <div>
+                <dt><span class="about__stat-n">250+</span></dt>
+                <dd class="about__stat-l">Реалізованих проєктів</dd>
+              </div>
+              <div>
+                <dt><span class="about__stat-n">98%</span></dt>
+                <dd class="about__stat-l">Задоволених клієнтів</dd>
+              </div>
+              <div>
+                <dt><span class="about__stat-n">15</span></dt>
+                <dd class="about__stat-l">Нагород</dd>
+              </div>
+            </dl>
+            <a href="contact.html" class="btn btn--dark">Зв'язатися з нами</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--alt" id="services">
+      <div class="container">
+        <div class="section__head">
+          <span class="section__tag">Що ми пропонуємо</span>
+          <h2 class="section__title">Наші послуги</h2>
+          <p class="section__sub">
+            Повний спектр дизайнерських послуг від концепції до реалізації
+          </p>
+        </div>
+        <div class="services__grid">
+          <article class="svc-card">
+            <div class="svc-card__img">
+              <img
+                src="images/service-residential.jpg"
+                alt="Дизайн сучасної квартири — теплі тони та мінімалізм"
+                width="400"
+                height="210"
+              />
+            </div>
+            <div class="svc-card__body">
+              <div class="svc-card__icon" aria-hidden="true">🏠</div>
+              <h3 class="svc-card__title">Дизайн житлових інтер'єрів</h3>
+              <p class="svc-card__desc">
+                Проєкти квартир, будинків і котеджів будь-якої площі. Від
+                мінімалістичних студій до розкішних апартаментів.
+              </p>
+              <p class="svc-card__price">від 500 грн/м²</p>
+              <a href="services.html#residential" class="svc-card__link"
+                >Детальніше →</a
+              >
+            </div>
+          </article>
+          <article class="svc-card">
+            <div class="svc-card__img">
+              <img
+                src="images/service-commercial.jpg"
+                alt="Дизайн сучасного офісного простору"
+                width="400"
+                height="210"
+              />
+            </div>
+            <div class="svc-card__body">
+              <div class="svc-card__icon" aria-hidden="true">🏢</div>
+              <h3 class="svc-card__title">Дизайн комерційних приміщень</h3>
+              <p class="svc-card__desc">
+                Офіси, ресторани, кафе та готелі. Функціональні рішення, що
+                підкреслюють ваш бренд.
+              </p>
+              <p class="svc-card__price">від 650 грн/м²</p>
+              <a href="services.html#commercial" class="svc-card__link"
+                >Детальніше →</a
+              >
+            </div>
+          </article>
+          <article class="svc-card">
+            <div class="svc-card__img">
+              <img
+                src="images/service-supervision.jpg"
+                alt="Авторський нагляд — контроль реалізації проєкту"
+                width="400"
+                height="210"
+              />
+            </div>
+            <div class="svc-card__body">
+              <div class="svc-card__icon" aria-hidden="true">👁️</div>
+              <h3 class="svc-card__title">Авторський нагляд</h3>
+              <p class="svc-card__desc">
+                Контроль відповідності реалізації проєкту та координація
+                будівельних і оздоблювальних робіт.
+              </p>
+              <p class="svc-card__price">від 200 грн/год</p>
+              <a href="services.html#supervision" class="svc-card__link"
+                >Детальніше →</a
+              >
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="portfolio">
+      <div class="container">
+        <div class="section__head">
+          <span class="section__tag">Наші роботи</span>
+          <h2 class="section__title">Портфоліо</h2>
+          <p class="section__sub">Вибрані проєкти з різних напрямів дизайну</p>
+        </div>
+
+        <div
+          class="portfolio__filter"
+          role="group"
+          aria-label="Фільтр портфоліо"
+        >
+          <button class="pf-btn active" data-filter="all">Усі роботи</button>
+          <button class="pf-btn" data-filter="residential">Житлові</button>
+          <button class="pf-btn" data-filter="commercial">Комерційні</button>
+          <button class="pf-btn" data-filter="supervision">Нагляд</button>
+        </div>
+
+        <div class="portfolio__grid">
+          <a
+            href="services.html#residential"
+            class="pf-item"
+            data-cat="residential"
+            aria-label="Квартира у Києві"
+          >
+            <img
+              src="images/portfolio-1.jpg"
+              alt="Дизайн-проєкт квартири у Києві — сучасний мінімалізм"
+              width="600"
+              height="450"
+            />
+            <div class="pf-overlay" aria-hidden="true">
+              <div>
+                <span class="pf-cat">Житловий</span
+                ><span class="pf-name">Квартира у Києві</span>
+              </div>
+            </div>
+          </a>
+          <a
+            href="services.html#commercial"
+            class="pf-item"
+            data-cat="commercial"
+            aria-label="Офіс IT-компанії"
+          >
+            <img
+              src="images/portfolio-2.jpg"
+              alt="Дизайн офісного простору для IT-компанії"
+              width="600"
+              height="450"
+            />
+            <div class="pf-overlay" aria-hidden="true">
+              <div>
+                <span class="pf-cat">Комерційний</span
+                ><span class="pf-name">Офіс IT-компанії</span>
+              </div>
+            </div>
+          </a>
+          <a
+            href="services.html#residential"
+            class="pf-item"
+            data-cat="residential"
+            aria-label="Скандинавський стиль"
+          >
+            <img
+              src="images/portfolio-3.jpg"
+              alt="Скандинавський стиль заміського будинку"
+              width="600"
+              height="450"
+            />
+            <div class="pf-overlay" aria-hidden="true">
+              <div>
+                <span class="pf-cat">Житловий</span
+                ><span class="pf-name">Скандинавський стиль</span>
+              </div>
+            </div>
+          </a>
+          <a
+            href="services.html#commercial"
+            class="pf-item"
+            data-cat="commercial"
+            aria-label="Ресторан Panorama"
+          >
+            <img
+              src="images/portfolio-4.jpg"
+              alt="Класичний інтер'єр ресторану Panorama"
+              width="600"
+              height="450"
+            />
+            <div class="pf-overlay" aria-hidden="true">
+              <div>
+                <span class="pf-cat">Комерційний</span
+                ><span class="pf-name">Ресторан Panorama</span>
+              </div>
+            </div>
+          </a>
+          <a
+            href="services.html#residential"
+            class="pf-item"
+            data-cat="residential"
+            aria-label="Лофт-апартаменти"
+          >
+            <img
+              src="images/portfolio-5.jpg"
+              alt="Лофт-стиль апартаментів"
+              width="600"
+              height="450"
+            />
+            <div class="pf-overlay" aria-hidden="true">
+              <div>
+                <span class="pf-cat">Житловий</span
+                ><span class="pf-name">Лофт-апартаменти</span>
+              </div>
+            </div>
+          </a>
+          <a
+            href="services.html#supervision"
+            class="pf-item"
+            data-cat="supervision"
+            aria-label="Котедж під Ірпінем"
+          >
+            <img
+              src="images/portfolio-6.jpg"
+              alt="Авторський нагляд — котедж під Ірпінем"
+              width="600"
+              height="450"
+            />
+            <div class="pf-overlay" aria-hidden="true">
+              <div>
+                <span class="pf-cat">Авторський нагляд</span
+                ><span class="pf-name">Котедж під Ірпінем</span>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--alt" id="reviews">
+      <div class="container">
+        <div class="section__head">
+          <span class="section__tag">Відгуки клієнтів</span>
+          <h2 class="section__title">Що про нас кажуть</h2>
+        </div>
+        <div class="reviews__grid">
+          <article class="review">
+            <div class="review__stars" aria-label="5 із 5">★★★★★</div>
+            <blockquote class="review__text">
+              «Неймовірна команда! Результат перевершив усі очікування — саме
+              той стиль, про який ми мріяли.»
+            </blockquote>
+            <div class="review__author">
+              <div class="review__avatar" aria-hidden="true">ОК</div>
+              <div>
+                <cite class="review__name">Олена Коваленко</cite
+                ><span class="review__role">Замовниця, Київ</span>
+              </div>
+            </div>
+          </article>
+          <article class="review">
+            <div class="review__stars" aria-label="5 із 5">★★★★★</div>
+            <blockquote class="review__text">
+              «Замовляли дизайн офісу. Проєкт виконали вчасно, врахували всі
+              побажання. Авторський нагляд — окреме задоволення.»
+            </blockquote>
+            <div class="review__author">
+              <div class="review__avatar" aria-hidden="true">ДМ</div>
+              <div>
+                <cite class="review__name">Дмитро Мельник</cite
+                ><span class="review__role">Директор TechStart, Ірпінь</span>
+              </div>
+            </div>
+          </article>
+          <article class="review">
+            <div class="review__stars" aria-label="5 із 5">★★★★★</div>
+            <blockquote class="review__text">
+              «Дизайн котеджу вийшов чудово. Справжні фахівці, які розуміють
+              клієнта з першого слова.»
+            </blockquote>
+            <div class="review__author">
+              <div class="review__avatar" aria-hidden="true">НП</div>
+              <div>
+                <cite class="review__name">Наталія Петренко</cite
+                ><span class="review__role">Замовниця, Буча</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="cbar" id="contacts">
+      <div class="container">
+        <div class="cbar__grid">
+          <div class="cbar__item">
+            <span class="cbar__icon" aria-hidden="true">📍</span>
+            <dl>
+              <dt><span class="cbar__label">Адреса</span></dt>
+              <dd>
+                <p class="cbar__val">
+                  вул. Хрещатик, 15, офіс 301<br />м. Київ, 01001
+                </p>
+              </dd>
+            </dl>
+          </div>
+          <div class="cbar__item">
+            <span class="cbar__icon" aria-hidden="true">📞</span>
+            <dl>
+              <dt><span class="cbar__label">Телефон</span></dt>
+              <dd>
+                <p class="cbar__val">
+                  <a href="tel:+380441234567">+38 (044) 123-45-67</a><br /><a
+                    href="tel:+380671234567"
+                    >+38 (067) 123-45-67</a
+                  >
+                </p>
+              </dd>
+            </dl>
+          </div>
+          <div class="cbar__item">
+            <span class="cbar__icon" aria-hidden="true">✉️</span>
+            <dl>
+              <dt><span class="cbar__label">Електронна пошта</span></dt>
+              <dd>
+                <p class="cbar__val">
+                  <a href="mailto:hello@interior-studio.ua"
+                    >hello@interior-studio.ua</a
+                  >
+                </p>
+                <a
+                  href="contact.html"
+                  class="btn btn--fill"
+                  style="
+                    margin-top: 14px;
+                    font-size: 0.76rem;
+                    padding: 9px 18px;
+                  "
+                  >Написати нам</a
+                >
+              </dd>
+            </dl>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__grid">
+          <div>
+            <a href="index.html" class="logo"
+              ><span class="logo__name">Interior Studio</span
+              ><span class="logo__sub">Дизайн інтер'єру</span></a
+            >
+            <p class="footer__desc">
+              Ми створюємо красиві та функціональні простори для вашого дому й
+              бізнесу.
+            </p>
+            <div class="footer__social">
+              <a
+                href="https://www.instagram.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="footer__soc"
+                aria-label="Instagram"
+                >📷</a
+              >
+              <a
+                href="https://www.facebook.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="footer__soc"
+                aria-label="Facebook"
+                >📘</a
+              >
+              <a
+                href="https://www.pinterest.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="footer__soc"
+                aria-label="Pinterest"
+                >📌</a
+              >
+            </div>
+          </div>
+          <div>
+            <h3 class="footer__col-title">Навігація</h3>
+            <ul class="footer__nav">
+              <li><a href="index.html" class="footer__link">Головна</a></li>
+              <li><a href="services.html" class="footer__link">Послуги</a></li>
+              <li>
+                <a href="index.html#portfolio" class="footer__link"
+                  >Портфоліо</a
+                >
+              </li>
+              <li><a href="contact.html" class="footer__link">Контакти</a></li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="footer__col-title">Послуги</h3>
+            <ul class="footer__nav">
+              <li>
+                <a href="services.html#residential" class="footer__link"
+                  >Житлові інтер'єри</a
+                >
+              </li>
+              <li>
+                <a href="services.html#commercial" class="footer__link"
+                  >Комерційні проєкти</a
+                >
+              </li>
+              <li>
+                <a href="services.html#supervision" class="footer__link"
+                  >Авторський нагляд</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="footer__col-title">Контакти</h3>
+            <div class="footer__row">
+              <span class="footer__icon">📍</span
+              ><span>вул. Хрещатик, 15, Київ</span>
+            </div>
+            <div class="footer__row">
+              <span class="footer__icon">📞</span
+              ><a href="tel:+380441234567" class="footer__link"
+                >+38 (044) 123-45-67</a
+              >
+            </div>
+            <div class="footer__row">
+              <span class="footer__icon">✉️</span
+              ><a href="mailto:hello@interior-studio.ua" class="footer__link"
+                >hello@interior-studio.ua</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="footer__bottom">
+          <p>
+            © 2026 Interior Studio &nbsp;|&nbsp; Курсова робота —
+            <strong>Білоус Владислав</strong>, К-31 &nbsp;|&nbsp; Ірпінський
+            фаховий коледж
+          </p>
+        </div>
+      </div>
+    </footer>
+    <script src="js/main.js"></script>
+  </body>
+</html>
