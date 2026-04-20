@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Контакти — Interior Studio</title>
+  <link rel="icon" type="image/png" href="images/favicon.png" sizes="32x32" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=Lato:wght@300;400;600;700&display=swap" rel="stylesheet" />
+  <link href="css/reset.css" rel="stylesheet" />
+  <link href="css/styles.css" rel="stylesheet" />
+</head>
+<body>
+
+  
+  <header class="header" id="header">
+    <div class="container">
+      <div class="header__inner">
+        <a href="index.html" class="logo" aria-label="Interior Studio">
+          <span class="logo__name">Interior Studio</span>
+          <span class="logo__sub">Дизайн інтер'єру</span>
+        </a>
+        
+        <nav class="nav" id="nav" aria-label="Основна навігація">
+          <ul class="nav__list">
+            <li><a href="index.html"            class="nav__link">Головна</a></li>
+            <li><a href="services.html"          class="nav__link">Послуги</a></li>
+            <li><a href="index.html#portfolio"   class="nav__link">Портфоліо</a></li>
+            <li><a href="index.html#about"       class="nav__link">Про нас</a></li>
+            <li><a href="contact.html"           class="nav__link active">Контакти</a></li>
+          </ul>
+        </nav>
+        
+        <button class="burger" id="burger" aria-label="Відкрити меню" aria-expanded="false" aria-controls="nav">
+          <span class="burger__line"></span>
+          <span class="burger__line"></span>
+          <span class="burger__line"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <div class="page-hero">
+    <div class="container">
+      <h1 class="page-hero__title">Зв'яжіться з нами</h1>
+      <nav class="breadcrumbs" aria-label="Хлібні крихти">
+        <a href="index.html">Головна</a><span aria-hidden="true">›</span><span aria-current="page">Контакти</span>
+      </nav>
+    </div>
+  </div>
+
+  
+  <main class="contact-page">
+    <div class="container">
+      <div class="contact__grid">
+
+        
+        <div class="contact__info">
+          <div class="cinfo">
+            <span class="cinfo__icon" aria-hidden="true">📍</span>
+            <div>
+              <h2 class="cinfo__title">Адреса офісу</h2>
+              <p class="cinfo__text">вул. Хрещатик, 15, офіс 301<br>м. Київ, 01001, Україна</p>
+              <a href="https://maps.google.com" target="_blank" rel="noopener noreferrer" style="display:inline-block;margin-top:10px;color:var(--accent);font-size:.85rem;font-weight:700;">Відкрити на Google Maps →</a>
+            </div>
+          </div>
+          <div class="cinfo">
+            <span class="cinfo__icon" aria-hidden="true">📞</span>
+            <div>
+              <h2 class="cinfo__title">Телефон</h2>
+              <p class="cinfo__text">
+                <a href="tel:+380441234567">+38 (044) 123-45-67</a><br>
+                <a href="tel:+380671234567">+38 (067) 123-45-67</a>
+              </p>
+            </div>
+          </div>
+          <div class="cinfo">
+            <span class="cinfo__icon" aria-hidden="true">✉️</span>
+            <div>
+              <h2 class="cinfo__title">Електронна пошта</h2>
+              <p class="cinfo__text">
+                <a href="mailto:hello@interior-studio.ua">hello@interior-studio.ua</a><br>
+                <a href="mailto:projects@interior-studio.ua">projects@interior-studio.ua</a>
+              </p>
+            </div>
+          </div>
+          
+          <div class="cinfo">
+            <span class="cinfo__icon" aria-hidden="true">🕐</span>
+            <div>
+              <h2 class="cinfo__title">Графік роботи</h2>
+              <dl style="font-size:.88rem;color:var(--gray);line-height:2.1;">
+                <dt style="font-weight:700;color:var(--dark);">Пн — Пт:</dt><dd>9:00 — 18:00</dd>
+                <dt style="font-weight:700;color:var(--dark);">Субота:</dt><dd>10:00 — 15:00</dd>
+                <dt style="font-weight:700;color:var(--dark);">Неділя:</dt><dd>Вихідний</dd>
+              </dl>
+            </div>
+          </div>
+        </div>
+
+        
+        <div class="form-box" role="region" aria-labelledby="form-h">
+          <h2 class="form__title" id="form-h">Замовити консультацію</h2>
+          <p class="form__sub">Заповніть форму — зв'яжемося впродовж 2 годин. Перша консультація — <strong>безкоштовна!</strong></p>
+
+          
+          <form id="contact-form" action="#" method="POST" novalidate>
+
+            
+            <div class="form__row">
+              <div class="form__col">
+                <div class="form__group">
+                  <label class="form__label" for="f-name">Ім'я <span class="form__req" aria-label="обов'язкове">*</span></label>
+                  <input type="text" id="f-name" name="firstName" class="form__input" placeholder="Ваше ім'я" required minlength="2" autocomplete="given-name" />
+                  <span class="form__error" id="e-name" role="alert">Вкажіть ваше ім'я (мін. 2 символи)</span>
+                </div>
+              </div>
+              <div class="form__col">
+                <div class="form__group">
+                  <label class="form__label" for="f-lastname">Прізвище</label>
+                  <input type="text" id="f-lastname" name="lastName" class="form__input" placeholder="Ваше прізвище" autocomplete="family-name" />
+                </div>
+              </div>
+            </div>
+
+            
+            <div class="form__row">
+              <div class="form__col">
+                <div class="form__group">
+                  <label class="form__label" for="f-email">Email <span class="form__req">*</span></label>
+                  
+                  <input type="email" id="f-email" name="email" class="form__input" placeholder="your@email.com" required autocomplete="email" />
+                  <span class="form__error" id="e-email" role="alert">Вкажіть коректну email-адресу</span>
+                </div>
+              </div>
+              <div class="form__col">
+                <div class="form__group">
+                  <label class="form__label" for="f-phone">Телефон <span class="form__req">*</span></label>
+                  
+                  <input type="tel" id="f-phone" name="phone" class="form__input" placeholder="+38 (0__) ___-__-__" required autocomplete="tel" />
+                  <span class="form__error" id="e-phone" role="alert">Вкажіть номер телефону</span>
+                </div>
+              </div>
+            </div>
+
+            
+            <div class="form__group">
+              <label class="form__label" for="f-service">Тип послуги <span class="form__req">*</span></label>
+              <select id="f-service" name="service" class="form__select" required>
+                <option value="">Оберіть тип послуги</option>
+                <option value="apartment">Дизайн квартири</option>
+                <option value="house">Дизайн будинку / котеджу</option>
+                <option value="office">Дизайн офісу</option>
+                <option value="restaurant">Дизайн ресторану / кафе</option>
+                <option value="shop">Дизайн магазину</option>
+                <option value="supervision">Авторський нагляд</option>
+                <option value="consultation">Консультація</option>
+              </select>
+              <span class="form__error" id="e-service" role="alert">Оберіть тип послуги</span>
+            </div>
+
+            <div class="form__group">
+              <label class="form__label" for="f-budget">Орієнтовний бюджет</label>
+              <select id="f-budget" name="budget" class="form__select">
+                <option value="">Оберіть діапазон</option>
+                <option value="under25">До 25 000 грн</option>
+                <option value="25-50">25 000 — 50 000 грн</option>
+                <option value="50-100">50 000 — 100 000 грн</option>
+                <option value="over100">Понад 100 000 грн</option>
+                <option value="discuss">Обговоримо індивідуально</option>
+              </select>
+            </div>
+
+            
+            <div class="form__group">
+              <label class="form__label" for="f-area">Площа приміщення (м²)</label>
+              <input type="number" id="f-area" name="area" class="form__input" placeholder="Наприклад: 75" min="1" max="10000" />
+            </div>
+
+            
+            <div class="form__group">
+              <label class="form__label" for="f-message">Опис проєкту <span class="form__req">*</span></label>
+              <textarea id="f-message" name="message" class="form__textarea" placeholder="Розкажіть про ваш проєкт: стиль, побажання, терміни..." required rows="5" minlength="10"></textarea>
+              <div style="display:flex;justify-content:space-between;margin-top:5px;align-items:center;">
+                <span class="form__error" id="e-message" role="alert">Мінімум 10 символів</span>
+                
+                <span id="char-count" style="font-size:.76rem;color:var(--gray);white-space:nowrap;" aria-live="polite">0 символів</span>
+              </div>
+            </div>
+
+            
+            <div class="form__group">
+              <span class="form__label">Як ви дізналися про нас?</span>
+              <div style="display:flex;flex-wrap:wrap;gap:18px;margin-top:10px;">
+                <label style="display:flex;align-items:center;gap:7px;font-size:.9rem;cursor:pointer;"><input type="radio" name="source" value="google" style="accent-color:var(--accent);" /> Google</label>
+                <label style="display:flex;align-items:center;gap:7px;font-size:.9rem;cursor:pointer;"><input type="radio" name="source" value="instagram" style="accent-color:var(--accent);" /> Instagram</label>
+                <label style="display:flex;align-items:center;gap:7px;font-size:.9rem;cursor:pointer;"><input type="radio" name="source" value="friends" style="accent-color:var(--accent);" /> Від знайомих</label>
+                <label style="display:flex;align-items:center;gap:7px;font-size:.9rem;cursor:pointer;"><input type="radio" name="source" value="other" style="accent-color:var(--accent);" /> Інше</label>
+              </div>
+            </div>
+
+            
+            <div class="form__check-group">
+              <input type="checkbox" id="f-agree" name="privacy" class="form__check" required />
+              <label class="form__check-label" for="f-agree">Я погоджуюся з <a href="#">Політикою конфіденційності</a> та надаю згоду на обробку персональних даних <span class="form__req">*</span></label>
+            </div>
+            <span class="form__error" id="e-agree" role="alert">Необхідно погодитися з Політикою конфіденційності</span>
+
+            
+            <button type="submit" class="form__submit">📨 Надіслати заявку</button>
+
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div>
+          <a href="index.html" class="logo"><span class="logo__name">Interior Studio</span><span class="logo__sub">Дизайн інтер'єру</span></a>
+          <p class="footer__desc">Ми створюємо красиві та функціональні простори для вашого дому й бізнесу.</p>
+          <div class="footer__social">
+            <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" class="footer__soc" aria-label="Instagram">📷</a>
+            <a href="https://www.facebook.com"  target="_blank" rel="noopener noreferrer" class="footer__soc" aria-label="Facebook">📘</a>
+            <a href="https://www.pinterest.com" target="_blank" rel="noopener noreferrer" class="footer__soc" aria-label="Pinterest">📌</a>
+          </div>
+        </div>
+        <div>
+          <h3 class="footer__col-title">Навігація</h3>
+          <ul class="footer__nav">
+            <li><a href="index.html"            class="footer__link">Головна</a></li>
+            <li><a href="services.html"          class="footer__link">Послуги</a></li>
+            <li><a href="index.html#portfolio"   class="footer__link">Портфоліо</a></li>
+            <li><a href="contact.html"           class="footer__link">Контакти</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="footer__col-title">Послуги</h3>
+          <ul class="footer__nav">
+            <li><a href="services.html#residential" class="footer__link">Житлові інтер'єри</a></li>
+            <li><a href="services.html#commercial"  class="footer__link">Комерційні проєкти</a></li>
+            <li><a href="services.html#supervision" class="footer__link">Авторський нагляд</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="footer__col-title">Контакти</h3>
+          <div class="footer__row"><span class="footer__icon">📍</span><span>вул. Хрещатик, 15, Київ</span></div>
+          <div class="footer__row"><span class="footer__icon">📞</span><a href="tel:+380441234567" class="footer__link">+38 (044) 123-45-67</a></div>
+          <div class="footer__row"><span class="footer__icon">✉️</span><a href="mailto:hello@interior-studio.ua" class="footer__link">hello@interior-studio.ua</a></div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>© 2026 Interior Studio &nbsp;|&nbsp; Курсова робота — <strong>Білоус Владислав</strong>, К-31 &nbsp;|&nbsp; Ірпінський фаховий коледж</p>
+      </div>
+    </div>
+  </footer>
+
+  
+  <div class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="modal__box">
+      <span class="modal__icon" aria-hidden="true">🎉</span>
+      <h2 class="modal__title" id="modal-title">Заявку прийнято!</h2>
+      <p class="modal__text">Дякуємо за звернення до Interior Studio!<br>Наш менеджер зв'яжеться з вами впродовж 2 годин.</p>
+      <button class="modal__close" id="modal-close">Чудово!</button>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
